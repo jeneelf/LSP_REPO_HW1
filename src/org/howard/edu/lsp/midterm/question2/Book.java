@@ -65,5 +65,4 @@ public class Book {
                 ", yearPublished=" + yearPublished +
                 '}';
     }
-   
 }
