@@ -1,6 +1,6 @@
 package org.howard.edu.lsp.midterm.question5;
 
-public class Streamable {
+public class StreamingService {
     void play() {
         System.out.println("Playing");
     }
