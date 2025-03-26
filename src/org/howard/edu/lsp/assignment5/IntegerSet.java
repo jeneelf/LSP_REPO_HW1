@@ -9,7 +9,7 @@ import java.util.List;
 public class IntegerSet {
     private List<Integer> set = new ArrayList<>();
 
-    /**Constructor to initialize an empty set*/
+	// Store the set elements in an ArrayList.
     public IntegerSet() {
     }
 
@@ -20,17 +20,16 @@ public class IntegerSet {
         }
 
     }
-    /**
-     *Clears set
-     */
+    
+	// Clears the internal representation of the set. 
     public void clear() {
         set.clear();
     }
 
-    /**Returns length of set*/
+    // Returns the length of the set. 5 pts.
     public int length() {
         return set.size();
-    }
+    } // returns the length
     /**Returns true if the 2 sets are equal*/
     public boolean equals(Object o) {
         if (o instanceof IntegerSet) {
@@ -39,7 +38,12 @@ public class IntegerSet {
         }
         return false;
     }
-    /**Returns true if the set contains the value*/
+    /*
+    * Returns true if the 2 sets are equal, false otherwise;
+    * Two sets are equal if they contain all of the same values in ANY order.  This overrides
+    * the equal method from the Object class. 10 pts.
+    */
+
     public boolean contains(int value) {
         return set.contains(value);
     }
