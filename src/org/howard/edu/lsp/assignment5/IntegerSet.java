@@ -1,6 +1,5 @@
 package org.howard.edu.lsp.assignment5;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 /** This class reps. the set of integers as well operations
@@ -80,25 +79,24 @@ public class IntegerSet {
 
     /**Returns the union of two set*/
     public void union(IntegerSet intSetb) {
-        for (IntegerSet num: intSetb.set) {
+        for (Integer num: intSetb.set) {
             add(num);
         }
     }
 
     /**interects two sets*/
     public void intersect(IntegerSet intSetb) {
-        for (IntegerSet num: intSetb.set) {
-            if (!set.contains(num)) {
+        List<Integer> temp = new ArrayList<>(set);
+        for (Integer num: temp) {
+            if (!intSetb.set.contains(num)) {
                 set.remove(num);
             }
         }
     }
     /**finds the difference between two sets*/
     public void diff(IntegerSet intSetb) {
-        for (IntegerSet num: intSetb.set) {
-            if (set.contains(num)) {
+        for (Integer num: intSetb.set) {
                 set.remove(num);
-            }
         }
     }
     /**finds the complement of two sets
@@ -106,10 +104,8 @@ public class IntegerSet {
     */
     public void complement(IntegerSet intSetb) {
         /**finds the difference between set and intSetb*/
-        for (IntegerSet num: intSetb.set) { 
-            if (set.contains(num)) {
+        for (Integer num: intSetb.set) {
                 set.remove(num);
-            }
         }
     }
 

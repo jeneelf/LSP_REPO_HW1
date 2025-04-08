@@ -20,9 +20,9 @@ public class Driver {
         set2.add(4);
         set2.add(10);
         set2.add(6);
-        System.out.println("Set 1: " + set1.toString());
-        System.out.println("Smallest value in set 1: " + set1.smallest());
-        System.out.println("Largest value in set 1: " + set1.largest());
+        System.out.println("Set 2: " + set2.toString());
+        System.out.println("Smallest value in set 1: " + set2.smallest());
+        System.out.println("Largest value in set 1: " + set2.largest());
    
         set1.union(set2); 
         System.out.println("Union of set 1 and set 2: " + set1.toString());
