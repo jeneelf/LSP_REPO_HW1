@@ -72,7 +72,7 @@ public class IntegerSetTest {
         set1.add(4);
         set1.add(6);
 
-        assertEquals(1, set1.smallest()());
+        assertEquals(1, set1.smallest());
     };  
 
     @Test
@@ -103,7 +103,7 @@ public class IntegerSetTest {
         assertTrue(set1.contains(6));
         assertTrue(set1.contains(7));
 
-        assertTrue(4, set1.length())
+        assertEquals(4, set1.length());
     };  
 
     @Test
@@ -175,3 +175,4 @@ public class IntegerSetTest {
         assertTrue(str.contains("5") && str.contains("10"));
     }
 
+}
