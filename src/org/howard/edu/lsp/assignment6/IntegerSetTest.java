@@ -2,7 +2,8 @@ package org.howard.edu.lsp.assignment6;
 
 import java.util.ArrayList;
 import org.howard.edu.lsp.assignment5.IntegerSet;
-import org.junit.junit.jupiter.api.*;
+import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -71,11 +72,8 @@ public class IntegerSetTest {
         set1.add(4);
         set1.add(6);
 
-        assertEquals(1, set1.largest());
+        assertEquals(1, set1.smallest()());
     };  
-
-	// Adds an item to the set or does nothing it already there	
- 	public void add(int item) {…}; // adds item to s or does nothing if it is in set
 
     @Test
     @DisplayName("Test case for remove method")
